@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "moleculer-runner",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "moleculer-runner --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "xo",
+    "lint:fix": "xo --fix"
   },
   "repository": {
     "type": "git",
@@ -23,9 +26,13 @@
     "moleculer-web": "^0.4.4",
     "zipkin": "^0.7.3",
     "zipkin-context-cls": "^0.6.1",
-    "zipkin-instrumentation-express": "^0.7.3"
+    "zipkin-instrumentation-express": "^0.7.3",
+    "zipkin-transport-http": "^0.7.3"
   },
   "devDependencies": {
-    "eslint": "^4.5.0"
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "space": true
   }
 }
